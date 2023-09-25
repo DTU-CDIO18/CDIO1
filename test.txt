@@ -1,4 +1,0 @@
-This is a test file
-uwu
-jpipn 2019-10-16: You can use `os.path.join` to join the path and the filename:
-```
