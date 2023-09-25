@@ -2,13 +2,6 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-class Player {
-    String name;
-
-    public Player(String name) {
-        this.name = name;
-    }
-}
 
 public class GameManager {
     List<Player> players;
