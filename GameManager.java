@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,4 +11,7 @@ public class GameManager {
 
     }
 
+    public Player[] getPlayers() {
+        return this.players.toArray(new Player[this.players.size()]);
+    }
 }
