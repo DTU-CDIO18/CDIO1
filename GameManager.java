@@ -18,4 +18,8 @@ public class GameManager {
     public void setPlayers(Player[] players) {
         this.players = Arrays.asList(players);
     }
+
+    public void addPlayer(Player player) {
+        this.players.add(player);
+    }
 }
