@@ -1,7 +1,14 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
-class Player {}
+class Player {
+    String name;
+
+    public Player(String name) {
+        this.name = name;
+    }
+}
 
 public class GameManager {
     List<Player> players;
@@ -30,5 +37,13 @@ public class GameManager {
      */
     public Player getActivePlayer() {
         return this.players.get(0);
+    }
+
+    /**
+     * Changes the active player, to the next player in the queue
+     * Rotates the playes array left, so index 1 becomes index 0, and index 0 becomes index len-1 
+     */
+    public void nextActivePlayer() {
+        Collections.rotate(players, -1);
     }
 }
