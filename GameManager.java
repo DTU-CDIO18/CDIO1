@@ -14,4 +14,8 @@ public class GameManager {
     public Player[] getPlayers() {
         return this.players.toArray(new Player[this.players.size()]);
     }
+
+    public void setPlayers(Player[] players) {
+        this.players = Arrays.asList(players);
+    }
 }
