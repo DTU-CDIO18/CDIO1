@@ -39,9 +39,12 @@ public class GameManager {
 
     /**
      * Changes the active player, to the next player in the queue
-     * Rotates the playes array left, so index 1 becomes index 0, and index 0 becomes index len-1 
+     * Adds 1 to activePlayerIndex.
+     * If activePlayerIndex < players.length => activePlayerIndex += 1 else activePlayerIndex = 0
      */
     public void nextActivePlayer() {
-        
+        this.activePlayerIndex = this.activePlayerIndex < this.players.length ?
+                                 this.activePlayerIndex+1 :
+                                 0; 
     }
 }
