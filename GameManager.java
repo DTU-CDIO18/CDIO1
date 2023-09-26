@@ -13,8 +13,8 @@ class Player {
 }
 
 public class GameManager {
-    Player[] players;
-    int activePlayerIndex = 0;
+    private Player[] players;
+    private int activePlayerIndex = 0;
 
     public GameManager(Player[] players) {
         this.players = players;
