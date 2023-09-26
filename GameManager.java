@@ -1,26 +1,31 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
+class Player {
+    String name;
+    int points = 0;
+
+    Player(String name) {
+        this.name = name;
+    }
+
+    public void addPoints(int amount) {
+        this.points += amount;
+    }
+}
 
 public class GameManager {
-    List<Player> players;
+    Player[] players;
+    int activePlayerIndex = 0;
 
     public GameManager(Player[] players) {
-        this.players = Arrays.asList(players);
-
+        this.players = players;
     }
 
     public Player[] getPlayers() {
-        return this.players.toArray(new Player[this.players.size()]);
+        return this.players;
     }
 
     public void setPlayers(Player[] players) {
-        this.players = Arrays.asList(players);
-    }
-
-    public void addPlayer(Player player) {
-        this.players.add(player);
+        this.players = players;
     }
 
     /**
@@ -29,7 +34,7 @@ public class GameManager {
      * @return the active player
      */
     public Player getActivePlayer() {
-        return this.players.get(0);
+        return this.players[0];
     }
 
     /**
@@ -37,6 +42,6 @@ public class GameManager {
      * Rotates the playes array left, so index 1 becomes index 0, and index 0 becomes index len-1 
      */
     public void nextActivePlayer() {
-        Collections.rotate(players, -1);
+        
     }
 }
