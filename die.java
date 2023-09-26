@@ -1,5 +1,7 @@
 class Die {
-    public int  getFaceValue() {
-        return (int) (Math.random() * 6) + 1;
+    private int faceCount = 6;
+
+    public int getFaceValue() {
+        return (int) (Math.random() * this.faceCount) + 1;
     }
 }
