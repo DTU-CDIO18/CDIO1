@@ -45,6 +45,6 @@ public class GameManager {
     public void nextActivePlayer() {
         this.activePlayerIndex = this.activePlayerIndex < this.players.length ?
                                  this.activePlayerIndex+1 :
-                                 0; 
+                                 0;
     }
 }
