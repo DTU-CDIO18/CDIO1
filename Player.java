@@ -23,4 +23,9 @@ public class Player {
         this.points = points;
     }
 
+    // Getting method for ID
+    public UUID getId() {
+        return id;
+    }
+
 }
