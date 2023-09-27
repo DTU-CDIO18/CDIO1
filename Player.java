@@ -18,11 +18,9 @@ public class Player {
         return points;
     }
 
-    static int getPoints() {
-
+    // Setting method for points
+    public void setPoints() {
+        this.points = points;
     }
 
-    static void setPoints() {
-
-    }
 }
