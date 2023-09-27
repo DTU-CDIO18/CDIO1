@@ -1,15 +1,23 @@
 import java.util.UUID;
 
-class Player {
-    public static void main(String[] args) {
+public class Player {
 
-        String name = "";
-        UUID id = UUID.randomUUID();
-        int points = 0;
+    private String name;
+    private UUID id;
+    private int points;
 
-        var scanner = new java.util.Scanner(System.in);
-        scanner.useLocale(java.util.Locale.ENGLISH);
+    // The constructor
+    public Player(""){
+        this.name = name;
+        this.points = 0;
+        this.id = UUID.randomUUID();
+    }
 
-        scanner.close();
+    static int getPoints() {
+
+    }
+
+    static void setPoints() {
+
     }
 }
