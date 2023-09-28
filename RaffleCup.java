@@ -1,7 +1,10 @@
+import java.util.List;
+
 class RaffleCup {
 
-    RaffleCup() {
+    private List<Die> dice;
 
+    RaffleCup(List<Die> dice) {
+        this.dice = dice;
     }
-
 }
