@@ -14,6 +14,10 @@ class RaffleCup {
      * @return an int[] of the dice results
      */
     public int[] roll() {
-        // TODO - Add functionality that rolls the all the dies and returns an int[] of the dice's result.
+        int[] diceResults = new int[dice.size()];
+        for (int i = 0; i < dice.size(); i++) {
+            diceResults[i] = dice.get(i).getFaceValue();
+        }
+        return diceResults;
     }
 }
