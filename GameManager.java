@@ -1,17 +1,4 @@
 
-class Player {
-    String name;
-    int points = 0;
-
-    Player(String name) {
-        this.name = name;
-    }
-
-    public void addPoints(int amount) {
-        this.points += amount;
-    }
-}
-
 public class GameManager {
     private Player[] players;
     private int activePlayerIndex = 0;
