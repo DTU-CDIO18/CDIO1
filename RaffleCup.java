@@ -1,10 +1,9 @@
-import java.util.List;
 
 class RaffleCup {
 
-    private List<Die> dice;
+    private Die[] dice;
 
-    RaffleCup(List<Die> dice) {
+    RaffleCup(Die[] dice) {
         this.dice = dice;
     }
 
@@ -14,9 +13,9 @@ class RaffleCup {
      * @return an int[] of the dice results
      */
     public int[] roll() {
-        int[] diceResults = new int[dice.size()];
-        for (int i = 0; i < dice.size(); i++) {
-            diceResults[i] = dice.get(i).getFaceValue();
+        int[] diceResults = new int[dice.length];
+        for (int i = 0; i < dice.length; i++) {
+            diceResults[i] = dice[i].getFaceValue();
         }
         return diceResults;
     }
