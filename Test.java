@@ -12,8 +12,6 @@ class Test {
                 System.out.println("False");
                 break;
             }
-            
-
         }
     }
 }
