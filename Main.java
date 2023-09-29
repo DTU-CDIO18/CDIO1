@@ -3,7 +3,7 @@ class Main {
         var scanner = new java.util.Scanner(System.in);
         System.out.println("Welcome to the Dicegame.");
         System.out.println("Enter name of Player 1.");
-        var player1 scanner.nextLine();
+        String player1 = scanner.nextLine();
 
     //RQ 1. Find active player
     
@@ -11,7 +11,7 @@ class Main {
     
     
         System.out.println("Enter name of Player 2.");
-        var player2 scanner.nextLine();
+        String player2 = scanner.nextLine();
     //RQ "Main" flow loop.
     
     //RQ end game when points >=40 (or above).
@@ -19,12 +19,7 @@ class Main {
 
 
     }
-    
-    var player1points 
-    var player2points
-    System.out.printLN     
-        
-    }
+}
 
 
 }
