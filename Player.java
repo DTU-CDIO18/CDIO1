@@ -31,6 +31,10 @@ public class Player {
         this.points = points;
     }
 
+    public void addPoints(int points) {
+        this.points += points;
+    }
+
     // Getting method for ID
     public UUID getId() {
         return this.id;
