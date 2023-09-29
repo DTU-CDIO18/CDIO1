@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 class Main {
     public static void main (String[] args){
-        var scanner = new java.util.Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Dicegame.");
         System.out.println("Enter name of Player 1.");
         String player1 = scanner.nextLine();
