@@ -19,7 +19,7 @@ public class Player {
     }
 
     // Setting method for points
-    public void setPoints() {
+    public void setPoints(int points) {
         this.points = points;
     }
 
