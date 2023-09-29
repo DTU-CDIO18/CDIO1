@@ -13,6 +13,14 @@ public class Player {
         this.id = UUID.randomUUID();
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     // Getting method for points
     public int getPoints() {
         return points;
