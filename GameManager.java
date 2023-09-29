@@ -21,7 +21,7 @@ public class GameManager {
      * @return the active player
      */
     public Player getActivePlayer() {
-        return this.players[0];
+        return this.players[this.activePlayerIndex];
     }
 
     /**
@@ -30,7 +30,7 @@ public class GameManager {
      * If activePlayerIndex < players.length => activePlayerIndex += 1 else activePlayerIndex = 0
      */
     public void nextActivePlayer() {
-        this.activePlayerIndex = this.activePlayerIndex < this.players.length ?
+        this.activePlayerIndex = this.activePlayerIndex < this.players.length-1 ?
                                  this.activePlayerIndex+1 :
                                  0;
     }
