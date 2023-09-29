@@ -14,10 +14,12 @@ class Main {
         System.out.println("Enter name of Player 2.");
         Player player2 = new Player(scanner.nextLine());
         // RQ "Main" flow loop.
+        while (true) {
 
-        // RQ end game when points >=40 (or above).
-        while (player1points || player2points >= 40) {
+            // RQ end game when points >=40 (or above).
+            while (player1points || player2points >= 40) {
 
+            }
         }
     }
 
