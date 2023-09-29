@@ -12,7 +12,7 @@ class Main {
         System.out.println("Enter name of Player 2.");
         Player player2 = new Player(scanner.nextLine());
 
-        scanner.close();
+        // scanner.close();
     
         GameManager gameManager = new GameManager(new Player[]{player1, player2});
 
@@ -20,6 +20,7 @@ class Main {
         Die die2 = new Die();
         RaffleCup raffleCup = new RaffleCup(new Die[]{die1, die2});
 
+        main:
         while (true) {
             Player activePlayer = gameManager.getActivePlayer();
 
@@ -39,9 +40,21 @@ class Main {
                 activePlayer.setPoints(0);
             }
 
+   
+            input:
+            while (true) {
+                System.out.println("Press enter to continue, press q to exit");
+                switch (scanner.nextLine()) {
+                    case ""     -> {break input;}
+                    case "q"    -> {break main;}
+                    default     -> {continue;}
+                }
+            }
 
             gameManager.nextActivePlayer();
         }
+
+        scanner.close();
     }
 
 }
