@@ -30,9 +30,13 @@ class Main {
 
             System.out.printf("%s: %d points\nDie 1: %d\nDie 2: %d\n\n", activePlayer.getName(), activePlayer.getPoints(), dieRoll[0], dieRoll[1]);
 
-            if (activePlayer.getPoints() >= 40 && dieRoll[0] == 6 && dieRoll[1] == 6) {
+            if (activePlayer.getPoints() >= 40 && dieRoll[0] == dieRoll[1] && !(dieRoll[0] == 1 && dieRoll[1] == 1)) {
                 System.out.printf("%s won!\n", activePlayer.getName());
                 System.exit(0);
+            }
+
+            if (dieRoll[0] == 1 && dieRoll[1] == 1) {
+                activePlayer.setPoints(0);
             }
 
 
