@@ -25,7 +25,7 @@ public class Player {
 
     // Getting method for ID
     public UUID getId() {
-        return id;
+        return this.id;
     }
 
 }
